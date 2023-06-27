@@ -1,0 +1,18 @@
+<template>
+    <template if:true={renderData}>
+        <lightning-datatable
+            key-field="id"
+            data={accountData}
+            columns={columns}>
+        </lightning-datatable>
+        <br/>
+        <br/>
+        <lightning-datatable
+            key-field="id"
+            data={leadList}
+            columns={columnsLead}>
+        </lightning-datatable>
+        <br/>
+        <br/>
+    </template>
+</template>
